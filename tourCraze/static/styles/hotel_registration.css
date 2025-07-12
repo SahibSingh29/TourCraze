@@ -1,0 +1,70 @@
+/* General form styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Style for the hotel name input */
+.custom-hotel-name-input {
+    border: 2px solid #02529C;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.hotel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group{
+    width: 50%;
+}
+
+/* Style for the phone number input */
+.custom-phone-input {
+    border: 2px solid #02529C;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Style for the email input */
+.custom-email-input {
+    border: 2px solid #02529C;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Style for the location input */
+.custom-location-input {
+    border: 2px solid #02529C;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Style for the submit button */
+.custom-submit-btn {
+    background-color: #02529C;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-submit-btn:hover {
+    background-color: #013b7a;
+}

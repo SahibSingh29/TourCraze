@@ -1,0 +1,47 @@
+/* Style for the content text area */
+.custom-content-input {
+    border: 2px solid #02529C; /* Custom border color */
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #f9f9f9; /* Light background */
+}
+
+/* Style for the image upload input */
+.custom-image-input {
+    border: 1px solid #02529C;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+/* Style for the submit button */
+.custom-submit-btn {
+    background-color: #02529C;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-submit-btn:hover {
+    background-color: #013b7a; /* Darker shade on hover */
+}
+
+.post-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group{
+    width: 50%;
+}

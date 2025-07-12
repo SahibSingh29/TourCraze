@@ -1,0 +1,73 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/register_page.css' %}">
+</head>
+
+<body>
+    <div class="cont-all">
+        <div class="cimage">
+            <img src="{% static 'images/coverimage.jpg' %}" alt="Engineering">
+        </div>
+
+        <div class="register-container">
+            <form class="register-form" method="post">
+                {% csrf_token %}
+                <h2>Register Here</h2>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="name">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Create Password</label>
+                <input type="password" id="password1" name="password1" required>
+
+                <label for="password">Confirm Password</label>
+                <input type="password" id="password2" name="password2" required>
+
+                <!-- {% for field in form %}
+                <div>
+                    <label>{{field.label}}</label>
+                    <br>
+                    {{field}}
+                </div>
+                {% endfor %} -->
+
+                {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                    <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+
+                <div class="sub-button">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+
+            <div class="divider">OR</div>
+
+            <p class="label-custom">Already have an account!</p>
+            <div class="register-box">
+                <p class="label-custom1"><a href="{% url 'login_page' %}" class="new-user">LOG IN</a></p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+{% endblock %}

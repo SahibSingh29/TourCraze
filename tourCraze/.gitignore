@@ -1,0 +1,3 @@
+venv/
+svenv/
+db.sqlite3

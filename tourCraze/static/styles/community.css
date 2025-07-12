@@ -1,0 +1,102 @@
+.navbar-brand-custom{
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+body{
+    padding: 0%;
+    margin: 0%;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.custom-toggler {
+    border-color: #ffffff !important;
+}
+
+.posts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-posts{
+    width: 50%; 
+    height: 30%; 
+    background-color: #ffffff; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Shadow */
+    padding: 20px;
+    margin: 50px auto; 
+    /* text-align: center;  */
+}
+
+.img-name{
+    display: flex;
+    align-items: center;
+    
+}
+
+h6{
+    padding-left: 10px;
+}
+
+.post-icon{
+    width: 50px; /* Adjust the size of the image icon */
+    height: 50px; /* Adjust the size of the image icon */
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden; /* Ensures the image fits within the circular frame */
+    /* border: 5px solid #ffffff; Adds a white border/frame around the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Adds shadow */
+    object-fit: cover; /* Ensures the image covers the entire container without distortion */
+}
+
+.post-text{
+    padding-top: 10px;
+    text-align: left;
+}
+
+.post-image{
+    width: 90%;
+    height: 90%;
+    padding-top: 20px;
+}
+
+.post-react{
+    display: flex;
+    gap: 4%;
+}
+
+.icons-react{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    gap: 8%;
+}
+
+.icon{
+    font-size: x-large;
+}
+
+.content-comment{
+    display: flex;
+    justify-content:flex-start !important;
+    flex-direction: column;
+}
+
+.button-color{
+    background-color: #02529C !important;
+}
+
+.custom-textarea{
+    width: 85% !important;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}

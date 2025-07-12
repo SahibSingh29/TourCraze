@@ -1,0 +1,21 @@
+.register{
+    width: 50%; 
+    height: 30%; 
+    background-color: #ffffff; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Shadow */
+    padding: 20px;
+    margin: 50px auto; 
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-color{
+    background-color: #02529C !important;
+}

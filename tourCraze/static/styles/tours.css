@@ -1,0 +1,73 @@
+.plans{
+    width: 50%; 
+    height: 30%; 
+    background-color: #ffffff; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Shadow */
+    padding: 20px;
+    margin: 50px auto; 
+    text-align: center; 
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.trip-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+ body {
+    margin: 0;
+}
+
+.carousel {
+    position: relative;
+    max-width: max-content;
+    overflow: hidden;
+    align-items: center;
+    justify-items: center;
+}
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    justify-self: center;
+}
+    
+.carousel-item {
+    min-width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+        
+.carousel-item img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+} 

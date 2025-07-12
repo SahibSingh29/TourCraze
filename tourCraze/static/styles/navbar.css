@@ -1,0 +1,110 @@
+/* Navbar styles */
+.navbar {
+    background-color: #02529C;
+}
+
+.navbar-brand-custom {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-toggler.custom-toggler {
+    border-color: rgb(255, 254, 254, 0.1);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-link {
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+    color: #ffcc00; /* Optional: Change color on hover */
+}
+
+.form-control {
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.form-control::placeholder {
+    color: #ffffff;
+}
+
+.btn-outline-success {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.btn-outline-success:hover {
+    background-color: #ffffff;
+    color: #02529C;
+}
+
+.avatar {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+
+.avatar1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.avatar img {
+    border-radius: 50%;
+}
+
+.avatar p {
+    display: inline-block;
+    vertical-align: middle;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.avatar p span {
+    display: block;
+    font-size: 12px;
+    color: #cccccc;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    display: flex;
+    align-items: center;
+}
+
+a img {
+    width: 40px;
+    height: 40px;
+}
+
+a p {
+    margin: 0 0 0 10px;
+    color: #ffffff;
+}
+
+.block-span{
+    display: block;
+    font-size: medium;
+    color: azure;
+}
+
+.style-search{
+    display: flex;
+    gap: 6%;
+}

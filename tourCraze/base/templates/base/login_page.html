@@ -1,0 +1,68 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/login_page.css' %}">
+</head>
+
+<body>
+    <div class="cont-all">
+
+        <div class="login-container">
+
+            <form class="login-form" method="POST">
+                {% csrf_token %}
+                
+                <h2>Welcome to TourCraze</h2>
+
+                <label for="username">Username:</label>
+                    <div class="input-line">
+                        <input type="text" id="username" name="username" required>
+                    </div>
+
+                <label for="password">Password:</label>
+                    <div class="input-line">
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                    <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+
+                <button type="submit">Login</button>
+
+                <div class="divider">OR</div>
+
+                <p class="label-custom">Don't have an account!</p>
+
+                <div class="register-box">
+                    <p class="label-custom1"><a href="{% url 'register_page' %}" class="new-user">Register Here</a></p>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        function loginWithGoogle() {
+            // Implement Google login logic here
+            alert("Google login not implemented");
+        }
+    </script>
+
+</body>
+
+</html>
+
+{% endblock %}

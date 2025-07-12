@@ -1,0 +1,64 @@
+{% load static %}
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/navbar.css' %}">
+
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg">
+		<div class="container-fluid">
+			<a class="navbar-brand navbar-brand-custom" href="{% url 'home_page' %}">TourCraze</a>
+			<button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="{% url 'home_page' %}">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'community_display' 1 %}">Community</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Hotels & Restaurants</a>
+					</li>
+					{% comment %} <li class="nav-item">
+						<a class="nav-link" href="{% url 'hotel_details' %}">Hotels Registration</a>
+					</li> {% endcomment %}
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'tours_page' 1 %}">Tours & Plans</a>
+					</li>
+					{% comment %} <li class="nav-item">
+						<a class="nav-link" href="{% url 'tours_details' %}">Tour Registration</a>
+					</li> {% endcomment %}
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'post_content' %}">Post</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'company_registration' %}">Company Registration</a>
+					</li>
+				</ul>
+				<div class="style-search">
+					{% comment %} <form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Search</button>
+					</form> {% endcomment %}
+					<a href="#">
+						<div class="avatar">
+							<img class="avatar1" src="{{request.user.avatar.url}}" />
+						</div>
+						<div>
+							<p>{{request.user.name}}</p>
+							<span class = "block-span">@{{request.user.username}}</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</nav>	
+</body>
+
+</html>
